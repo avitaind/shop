@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <slider>
+    <item>
+      <name><![CDATA[Home1 Slide]]></name>
+      <identity><![CDATA[home1-slide]]></identity>
+      <slider_params><![CDATA[{"1":{"position":"1","file":"\/b\/g\/bg_banner.jpg","image":"","media_type":"image","value_id":"","label":"","url":"http:\/\/www.vicomagelocal.com\/vicomage\/manor\/pub\/media\/vicomage\/slider\/b\/g\/bg_banner.jpg","urlcontent":"","description":"<div class=\"slide-caption slide-caption-right\">\r\n    <div class=\"text-slide text-slide1\">\r\n        <h4 class=\"caption1 txt1\">Arijitia<\/h4>\r\n        <h1 class=\"caption2 txt2\">New Collection<\/h1>\r\n        <h3 class=\"caption4\"><a class=\"btn-shop\" href=\"#\" tabindex=\"0\">discover now<\/a><\/h3>\r\n    <\/div>\r\n<\/div>","disabled":"0","removed":""},"2":{"position":"3","file":"\/h\/1\/h1-slide2.jpg","image":"","media_type":"image","value_id":"","label":"","url":"http:\/\/www.vicomagelocal.com\/vicomage\/manor\/pub\/media\/vicomage\/slider\/h\/1\/h1-slide2.jpg","urlcontent":"","description":"<div class=\"slide-caption slide-caption-left\">\r\n    <div class=\"text-slide text-slide1\">\r\n        <h4 class=\"caption1 txt1\">Arijitia<\/h4>\r\n        <h1 class=\"caption2 txt2\">Coat & Jacket<\/h1>\r\n        <h3 class=\"caption4\"><a class=\"btn-shop\" href=\"#\" tabindex=\"0\">discover now<\/a><\/h3>\r\n    <\/div>\r\n<\/div>","disabled":"0","removed":""}}]]></slider_params>
+      <width><![CDATA[1920]]></width>
+      <height><![CDATA[650]]></height>
+      <number><![CDATA[2]]></number>
+      <status><![CDATA[1]]></status>
+      <navigation><![CDATA[1]]></navigation>
+      <pagercontrol><![CDATA[1]]></pagercontrol>
+      <lazyload><![CDATA[1]]></lazyload>
+      <speed><![CDATA[]]></speed>
+      <auto_play><![CDATA[0]]></auto_play>
+      <autoplay_speed><![CDATA[]]></autoplay_speed>
+      <stop_on_hover><![CDATA[0]]></stop_on_hover>
+      <loop><![CDATA[0]]></loop>
+    </item>
+  </slider>
+</root>

@@ -1,0 +1,41 @@
+// /**
+//  * Copyright © 2016 Magento. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+  .bg-breadcrumbs {
+    background: rgba(0,0,0,0) url("../images/category-banner.jpg") center center;
+    margin-bottom: 60px;
+    padding: 170px 0;
+    text-align: center;
+    background-size: auto 100%;
+    .bread-title {
+      font-size: 84px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 0 0 35px;
+    }
+  }
+  .breadcrumbs {
+    .lib-breadcrumbs();
+    margin-bottom:0;
+    .items{
+      font-size: 14px;
+      .item{
+        &:not(:last-child)::after{
+          content:"/";
+        }
+      }
+    }
+    strong {
+      color: #333;
+    }
+  }
+}
+
+

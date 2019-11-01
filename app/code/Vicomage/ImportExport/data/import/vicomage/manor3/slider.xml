@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <slider>
+    <item>
+      <name><![CDATA[Home 3 Slide]]></name>
+      <identity><![CDATA[home3-slide]]></identity>
+      <slider_params><![CDATA[{"1":{"position":"1","file":"\/h\/o\/home3_slide.jpg","image":"","media_type":"image","value_id":"","label":"","url":"http:\/\/localhost\/vicomage\/manor\/pub\/media\/vicomage\/slider\/h\/o\/home3_slide.jpg","urlcontent":"","description":"<div class=\"slide-caption slide-caption-center\">\r\n    <div class=\"text-slide text-slide1\">\r\n        <h4 class=\"caption3 txt1\">2018 collection<\/h4>\r\n        <h1 class=\"caption2 txt2\">Men's Denim & Jean<\/h1>\r\n        <h3 class=\"caption4\"><a class=\"btn-shop\" href=\"#\" tabindex=\"0\">discover it now<\/a><\/h3>\r\n    <\/div>\r\n<\/div>","disabled":"0","removed":""},"2":{"position":"2","file":"\/h\/o\/home3_slide_1.jpg","image":"","media_type":"image","value_id":"","label":"","url":"http:\/\/localhost\/vicomage\/manor\/pub\/media\/vicomage\/slider\/h\/o\/home3_slide_1.jpg","urlcontent":"","description":"<div class=\"slide-caption slide-caption-center\">\r\n    <div class=\"text-slide text-slide1\">\r\n        <h4 class=\"caption3 txt1\">2018 collection<\/h4>\r\n        <h1 class=\"caption2 txt2\">Men's Denim & Jean<\/h1>\r\n        <h3 class=\"caption4\"><a class=\"btn-shop\" href=\"#\" tabindex=\"0\">discover it now<\/a><\/h3>\r\n    <\/div>\r\n<\/div>","disabled":"0","removed":""}}]]></slider_params>
+      <width><![CDATA[1920]]></width>
+      <height><![CDATA[800]]></height>
+      <number><![CDATA[2]]></number>
+      <status><![CDATA[1]]></status>
+      <navigation><![CDATA[1]]></navigation>
+      <pagercontrol><![CDATA[1]]></pagercontrol>
+      <lazyload><![CDATA[1]]></lazyload>
+      <speed><![CDATA[]]></speed>
+      <auto_play><![CDATA[0]]></auto_play>
+      <autoplay_speed><![CDATA[]]></autoplay_speed>
+      <stop_on_hover><![CDATA[0]]></stop_on_hover>
+      <loop><![CDATA[0]]></loop>
+    </item>
+  </slider>
+</root>

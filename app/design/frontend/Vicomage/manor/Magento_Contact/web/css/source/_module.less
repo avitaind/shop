@@ -1,0 +1,117 @@
+// /**
+//  * Copyright © 2015 Magento. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+& when (@media-common = true) {
+    .contact-index-index {
+        .page-title-wrapper {
+            display: none;
+        }
+        .fieldset > .legend, .contact-info .contacts-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+		.page-wrapper .page-bottom {
+			max-width: 100%;
+			padding: 0;
+			width: 100%;
+		}
+    }
+	.contact-content {
+		.field {
+			input {
+				height: 50px;
+			}
+		}
+		.actions-toolbar{
+			.action.primary{
+				padding: 15px;
+				font-size:14px;
+				font-weight: 600;
+			}
+		}
+		.contact-info {
+			max-width:515px;
+			padding-right:0;
+			.contact-box {
+				text-align: left;
+				.contact-none {
+					background-color: #e5e5e5;
+					padding: 40px 0;
+					.contact-boxcontent {
+						margin: 0 auto;
+						max-width: 245px;
+						.media {
+							&:first-child{
+								margin-top:0;
+							}
+							margin-top:30px;
+							line-height: 24px;
+							.pull-left {
+								padding-right: 25px;
+							}
+						}
+					}
+				}
+			}
+			.title {
+				color: #222222;
+				display: block;
+				font-size: 14px;
+				font-weight: 600;
+				text-transform: capitalize;
+				margin: 0 0 10px;
+				i {
+					font-size: 16px;
+					margin-right: 10px;
+				}
+			}
+		}
+		textarea {
+			border-color: #dddddd;
+			height: 160px;
+		}
+
+		.page-subheading{
+			font-size:32px;
+			padding: 0 15px;
+			margin: 0 0 80px;
+			position: relative;
+			&:before{
+				border: 1px solid red;
+				bottom: -26px;
+				content: "";
+				height: 2px;
+				position: absolute;
+				width: 80px;
+			}
+		}
+		.fieldset{
+			margin: 0 0 20px;
+			.fields{
+				.field{
+					margin:0;
+				}
+			}
+			.label{
+				padding: 15px 0 16px;
+				display: inline-block;
+				text-transform: none;
+			}
+		}
+	}
+	.contact-map {
+		margin: 0;
+		iframe {
+			width: 100%;
+			padding-bottom:10px;
+		}
+	}
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    
+}

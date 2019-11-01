@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <slider>
+    <item>
+      <name><![CDATA[Home 7 Slide]]></name>
+      <identity><![CDATA[home7-slide]]></identity>
+      <slider_params><![CDATA[{"1":{"position":"1","file":"\/h\/o\/home7-slider.jpg","image":"","media_type":"image","value_id":"","label":"","url":"http:\/\/localhost\/vicomage\/manor\/pub\/media\/vicomage\/slider\/h\/o\/home7-slider.jpg","urlcontent":"","description":"<div class=\"slide-caption slide-caption-center\">\r\n    <div class=\"text-slide text-slide1\">\r\n        <h2 class=\"caption1 txt1\">Buymore<\/h2>\r\n       \t<h3 class=\"caption2\">with <span class=\"big-text\">Less<\/span><\/h3>\r\n    <\/div>\r\n<\/div>","disabled":"0","removed":""},"2":{"position":"2","file":"\/h\/o\/home7-slider_1.jpg","image":"","media_type":"image","value_id":"","label":"","url":"http:\/\/localhost\/vicomage\/manor\/pub\/media\/vicomage\/slider\/h\/o\/home7-slider_1.jpg","urlcontent":"","description":"<div class=\"slide-caption slide-caption-center\">\r\n    <div class=\"text-slide text-slide1\">\r\n        <h2 class=\"caption1 txt1\">Buymore<\/h2>\r\n       \t<h3 class=\"caption2\">with <span class=\"big-text\">Less<\/span><\/h3>\r\n    <\/div>\r\n<\/div>","disabled":"0","removed":""}}]]></slider_params>
+      <width><![CDATA[1920]]></width>
+      <height><![CDATA[1042]]></height>
+      <number><![CDATA[2]]></number>
+      <status><![CDATA[1]]></status>
+      <navigation><![CDATA[1]]></navigation>
+      <pagercontrol><![CDATA[1]]></pagercontrol>
+      <lazyload><![CDATA[1]]></lazyload>
+      <speed><![CDATA[]]></speed>
+      <auto_play><![CDATA[0]]></auto_play>
+      <autoplay_speed><![CDATA[]]></autoplay_speed>
+      <stop_on_hover><![CDATA[0]]></stop_on_hover>
+      <loop><![CDATA[0]]></loop>
+    </item>
+  </slider>
+</root>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <block>
+    <item>
+      <title><![CDATA[Block Featured Sidebar]]></title>
+      <identifier><![CDATA[block_featured_sidebar]]></identifier>
+      <content><![CDATA[<div class="banner-sidebar">
+<img class="img-responsive"  src="{{media url="wysiwyg/vicomage/static/banner-sidebar.jpg"}}" alt="" />
+</div>
+<div class="section-featured-sidebar section-product-sidebar">
+{{widget type="Vicomage\Multiwidget\Block\Widget" title="Featured Items" identifier="featured-items" status="1" widget_product_type="category" category_ids="4" conditions_encoded="a:1:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]]" product_category_collection="random" category_template="widget/category/default-list.phtml" limit="8" slide="1" vertical="false" infinite="false" autoplay="false" arrows="true" dots="false" speed="300" autoplayspeed="3000" rows="4" width-image="270" height-image="320" padding="15" mobile="1" portrait="1" landscape="1" tablet="1" notebook="1" desktop="1" visible="1"}}
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Custom Block Tab]]></title>
+      <identifier><![CDATA[custom_block_tab]]></identifier>
+      <content><![CDATA[<table class="table table-sizing-guide">
+    <thead>
+        <tr>
+            <th colspan="6"><b>Clothing - Single Size Conversion (Continued)</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>UK</td>
+            <td>18</td>
+            <td>20</td>
+            <td>22</td>
+            <td>24</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>European</td>
+            <td>46</td>
+            <td>48</td>
+            <td>50</td>
+            <td>52</td>
+            <td>54</td>
+        </tr>
+        <tr>
+            <td>US</td>
+            <td>14</td>
+            <td>16</td>
+            <td>18</td>
+            <td>20</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>8</td>
+            <td>10</td>
+            <td>12</td>
+            <td>14</td>
+            <td>16</td>
+        </tr>
+    </tbody>
+</table>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Social]]></title>
+      <identifier><![CDATA[block_footer_social]]></identifier>
+      <content><![CDATA[<div class="social-list">
+			<ul class="list-inline">
+				<li><a href="#" class="social-link"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+						<li><a href="#" class="social-link"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+						<li><a href="#" class="social-link"><i class="fa fa-google-plus"><span class="hidden">google</span></i></a></li>
+						<li><a href="#" class="social-link"><i class="fa fa-behance"><span class="hidden">behance</span></i></a></li>
+						<li><a href="#" class="social-link"><i class="fa fa-youtube-play"><span class="hidden">youtube</span></i></a></li>
+			</ul>
+		</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Bottom]]></title>
+      <identifier><![CDATA[block_footer_bottom_home1]]></identifier>
+      <content><![CDATA[    <div class="social-list">
+        <ul class="list-inline">
+            <li><a href="#" class="social-link"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-linkedin"><span class="hidden">linkedin</span></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-rss"><span class="hidden">rss</span></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-dribbble"><span class="hidden">dribbble</span></i></a></li>
+        </ul>
+    </div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Home2 Slide]]></title>
+      <identifier><![CDATA[block_home2_slide]]></identifier>
+      <content><![CDATA[<div class="home2-slide">
+<div class="home2-slide-content">
+	<div class="row">
+		<div class="col-lg-9 col-md-9 col-xs-12 col-sm-12">
+			{{widget type="Vicomage\Slider\Block\Widget\Slider" setIdentity="home2-slide"}}
+		</div>
+		<div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+			<div class="item-collection item-margin-bottom effectbanner">
+					<div class="collection-image image-wrap">
+						<a title="" href="#"><img class="img-responsive" src="{{media url="wysiwyg/vicomage/static/home2/home2_banner1.jpg"}}" alt="" /></a>
+						<div class="text-content">                      
+							<a href=""><h3 class="p-name">Hobbies man</h3></a>        
+						</div>
+					</div> 
+				</div>
+				<div class="item-collection effectbanner">
+					<div class="collection-image image-wrap">
+						<a title="" href="#"><img class="img-responsive" src="{{media url="wysiwyg/vicomage/static/home2/home2_banner2.jpg"}}" alt="" /></a>
+						<div class="text-content">                      
+							<a href=""><h3 class="p-name">Men's shoes</h3></a>        
+						</div>
+					</div> 
+				</div>
+</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Top Home 2]]></title>
+      <identifier><![CDATA[block_footer_top_home2]]></identifier>
+      <content><![CDATA[<div class="container">
+<div>
+    <h3  class="heading" >Manor</h3>
+    <p> Quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima etquinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum</p>
+</div>  
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Middle Type 2]]></title>
+      <identifier><![CDATA[block_footer_middle_home2]]></identifier>
+      <content><![CDATA[<div class="footer-top-inner">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+            <div class="collapsible mobile-collapsible">
+                <h3 class="heading"><span class="block-title">Contact us</span></h3>
+                <p class="address">221b Nothingham Forest - London - UK</p>
+                <br />
+                <p class="tel">0123 456 789 - 0123 987 654</p>
+                <br /> Redikiel@gmail.com</div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+                <div class="collapsible mobile-collapsible">
+                    <h3 class="heading"><span class="block-title">Support</span></h3>
+                    <div class="block-content block-content-statick toggle-content">
+                        <ul class="bullet">
+                            <li><a href="#">Shipping & Return</a></li>
+                            <li><a href="#">Our policy</a></li>
+                            <li><a href="#">Term & Conditions</a></li>
+                            <li><a href="#">F.A.Qs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+                <div class="collapsible mobile-collapsible">
+                    <h3 class="heading"><span class="block-title">About us</span></h3>
+                    <div class="block-content block-content-statick toggle-content">
+                        <ul class="bullet">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Official Store</a></li>
+                            <li><a href="#">Join us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-mobile-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-mobile-12">
+                        <div class="footer-newletter-content">
+                            <h3 class="heading"><span class="block-title">Newsletter</span></h3>
+                            <p>Please register to receive these great deals from us.</p>
+                        {{block class="Magento\Newsletter\Block\Subscribe" name="footer.newsletter" template="subscribe_footer.phtml"}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Bottom Type 2]]></title>
+      <identifier><![CDATA[block_footer_bottom_type2]]></identifier>
+      <content><![CDATA[<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-mobile-12">
+    <ul class="footer-link-bottom">
+      <li><a href="#">Faq</a></li>
+      <li><a href="#">Terms</a></li>
+      <li class="last"><a href="#">Site Map</a></li>
+    </ul>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-mobile-12">
+    <div class="footer-payment">
+           <img src="{{media url="wysiwyg/vicomage/footer/footer-payment.png"}}" alt="" />
+    </div>
+  </div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+  </block>
+</root>

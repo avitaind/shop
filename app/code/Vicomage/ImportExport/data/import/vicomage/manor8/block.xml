@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <block>
+    <item>
+      <title><![CDATA[Block Featured Sidebar]]></title>
+      <identifier><![CDATA[block_featured_sidebar]]></identifier>
+      <content><![CDATA[<div class="banner-sidebar">
+<img class="img-responsive"  src="{{media url="wysiwyg/vicomage/static/banner-sidebar.jpg"}}" alt="" />
+</div>
+<div class="section-featured-sidebar section-product-sidebar">
+{{widget type="Vicomage\Multiwidget\Block\Widget" title="Featured Items" identifier="featured-items" status="1" widget_product_type="category" category_ids="4" conditions_encoded="a:1:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]]" product_category_collection="random" category_template="widget/category/default-list.phtml" limit="8" slide="1" vertical="false" infinite="false" autoplay="false" arrows="true" dots="false" speed="300" autoplayspeed="3000" rows="4" width-image="270" height-image="320" padding="15" mobile="1" portrait="1" landscape="1" tablet="1" notebook="1" desktop="1" visible="1"}}
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Middle]]></title>
+      <identifier><![CDATA[block_footer_middle_home1]]></identifier>
+      <content><![CDATA[<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 col-mobile-12">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+                <div class="collapsible mobile-collapsible">
+                    <h3 class="heading"><span class="block-title">my account</span></h3>
+                    <span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+                    <div class="block-content block-content-statick toggle-content">
+                        <ul class="bullet">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Advanced search</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+                <div class="collapsible mobile-collapsible">
+                    <h3 class="heading"><span class="block-title">shopping</span></h3>
+                    <span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+                    <div class="block-content block-content-statick toggle-content">
+                        <ul class="bullet">
+                            <li><a href="#">Your Cart</a></li>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Addresses</a></li>
+                            <li><a href="#">Wishlist Items</a></li>
+                            <li><a href="#">Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+                <div class="collapsible mobile-collapsible">
+                    <h3 class="heading"><span class="block-title">extras</span></h3>
+                    <span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+                    <div class="block-content block-content-statick toggle-content">
+                        <ul class="bullet">
+                            <li><a href="#">Evouchers</a></li>
+                            <li><a href="#">Gift card</a></li>
+                            <li><a href="#">Gift experiance</a></li>
+                            <li><a href="#">Weddding gift list</a></li>
+                            <li><a href="#">Next credit card account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-mobile-12">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-mobile-12">
+                <div class="footer-newletter-content">
+                    <h3 class="heading"><span class="block-title">newsletter</span></h3>
+                    <p>Please register to receive these great deals from us.</p>
+                {{block class="Magento\Newsletter\Block\Subscribe" name="footer.newsletter" template="subscribe_footer.phtml"}}</div>
+            </div>
+        </div>
+    </div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Custom Block Tab]]></title>
+      <identifier><![CDATA[custom_block_tab]]></identifier>
+      <content><![CDATA[<table class="table table-sizing-guide">
+    <thead>
+        <tr>
+            <th colspan="6"><b>Clothing - Single Size Conversion (Continued)</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>UK</td>
+            <td>18</td>
+            <td>20</td>
+            <td>22</td>
+            <td>24</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>European</td>
+            <td>46</td>
+            <td>48</td>
+            <td>50</td>
+            <td>52</td>
+            <td>54</td>
+        </tr>
+        <tr>
+            <td>US</td>
+            <td>14</td>
+            <td>16</td>
+            <td>18</td>
+            <td>20</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>8</td>
+            <td>10</td>
+            <td>12</td>
+            <td>14</td>
+            <td>16</td>
+        </tr>
+    </tbody>
+</table>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Social]]></title>
+      <identifier><![CDATA[block_footer_social]]></identifier>
+      <content><![CDATA[<div class="social-list">
+			<ul class="list-inline">
+				<li><a href="#" class="social-link"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+						<li><a href="#" class="social-link"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+						<li><a href="#" class="social-link"><i class="fa fa-google-plus"><span class="hidden">google</span></i></a></li>
+						<li><a href="#" class="social-link"><i class="fa fa-behance"><span class="hidden">behance</span></i></a></li>
+						<li><a href="#" class="social-link"><i class="fa fa-youtube-play"><span class="hidden">youtube</span></i></a></li>
+			</ul>
+		</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Top ( manor3)]]></title>
+      <identifier><![CDATA[block_footer_top_type3]]></identifier>
+      <content><![CDATA[<div class="footer-newletter-content ">
+	<div class="block-newsletter">
+		<h3 class="block-title">Signup and get <span>29%</span> discount on next order</h3>
+		{{block class="Magento\Newsletter\Block\Subscribe" name="footer.newsletter" template="subscribe_footer.phtml"}}
+		<div class="social-list">
+			<ul class="list-inline">
+				<li><a href="#" class="social-link"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+				<li><a href="#" class="social-link"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+				<li><a href="#" class="social-link"><i class="fa fa-linkedin"><span class="hidden">linkedin</span></i></a></li>
+				<li><a href="#" class="social-link"><i class="fa fa-rss"><span class="hidden">rss</span></i></a></li>
+				<li><a href="#" class="social-link"><i class="fa fa-dribbble"><span class="hidden">dribbble</span></i></a></li>
+			</ul>
+		</div>
+	</div>		
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Bottom Type3]]></title>
+      <identifier><![CDATA[block_footer_bottom_type3]]></identifier>
+      <content><![CDATA[<ul class="footer-link-bottom">
+		<li><a href="#">Faq</a></li>
+		<li><a href="#">Terms</a></li>
+		<li class="last"><a href="#">Site Map</a></li>
+	</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+  </block>
+</root>

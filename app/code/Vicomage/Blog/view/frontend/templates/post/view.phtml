@@ -1,0 +1,61 @@
+<?php
+/**
+ * Blog post view template
+ *
+ * @var $block \Vicomage\Blog\Block\Post\View
+ */
+?>
+<?php
+    $_post = $this->getPost();
+    $_postUrl = $_post->getPostUrl();
+    $_postName = $block->escapeHtml($_post->getTitle(), null, true);
+?>
+<div class="post-view">
+    <div class="post-holder post-holder-<?php echo $_post->getId() ?>">
+
+
+        <div class="post-content">
+            <div class="post-description clearfix">
+                <?php if ($featuredImage = $_post->getFeaturedImage()) { ?>
+                <div class="post-image">
+                    <img src="<?php echo $featuredImage ?>" alt="<?php echo $_postName ?>" />
+                </div>
+                <?php } ?>
+                <div class="post-title-holder clearfix">
+                    <div class="post-date">
+                        <span class="date-home-month"><?php echo $_post->getPublishDate('M') ?></span>
+                        <span class="date-home-day"><?php echo $_post->getPublishDate('j') ?></span>
+                        <span class="date-home-year"><?php echo $_post->getPublishDate('Y') ?></span>
+                    </div>
+
+                    <h2 class="post-title">
+                        <a class="post-item-link"
+                           href="<?php echo $_postUrl ?>">
+                            <?php echo $_postName; ?>
+                        </a>
+                    </h2>
+                </div>
+
+                <div class="post-text-hld">
+                    <?php echo $block->getContent() ?>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="post-bottom">
+            <div class="post-bottom-top">
+                <div class="author">
+                    <?php echo $this->getInfoHtml() ?>
+                </div>
+                <div class="social-links pull-right">
+                    <a><i class="icon-social-facebook"></i></a>
+                    <a><i class="icon-social-twitter"></i></a>
+                    <a><i class="icon-social-instagram"></i></a>
+                    <a><i class="icon-social-pinterest"></i></a>
+                </div>
+            </div>
+            <?php echo $this->getChildHtml('blog.post.bottom') ?>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,713 @@
+<?php
+    $header_type = $this->getConfig('vicomage_general_config/header/header_type');
+?>
+<header class="page-header header-type<?php echo $header_type; ?>">
+	<?php if($header_type == 1): ?>
+        <div class="panel wrapper">
+            <div class="panel header header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-top-left col-sm-6 col-md-8 col-lg-8">
+                            <?php echo $this->getChildHtml("store_language"); ?>
+                            <?php echo $this->getChildHtml("currency"); ?>
+                        </div>
+                        <div class="header-top-right col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="top-links-header switcher" id="links-header">
+                                <div class="actions dropdown options links-header-options">
+                                    <div class="action toggle links-header-trigger" id="links-header-trigger">
+                                        <strong><i class="icon icon-user"></i><?php echo __('My account') ?></strong>
+                                    </div>
+                                    <div class="links-header-dropdown" data-mage-init='{"dropdownDialog":{
+											"appendTo":".links-header-options",
+											"triggerTarget":"#links-header-trigger",
+											"closeOnMouseLeave": false,
+											"triggerClass":"active",
+											"parentClass":"active",
+											"buttons":null}}'>
+                                        <?php echo $this->getChildHtml("header.links"); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wishlist-header link-wishlist link wishlist" data-bind="scope: 'wishlist'">
+								<span data-bind="scope: 'wishlist'" class="link wishlist">
+								<a href="<?php echo $this->getUrl('wishlist') ?>">
+									<span class="icon icon-heart"></span>
+                                    <!-- ko if: wishlist().counter --><span data-bind="text: wishlist().counter" class="counter qty"></span><!-- /ko -->
+								</a>
+                            </div>
+                            <script type="text/x-magento-init">
+								{
+									"*": {
+										"Magento_Ui/js/core/app": {
+											"components": {
+												"wishlist": {
+													"component": "Magento_Wishlist/js/view/wishlist"
+												}
+											}
+										}
+									}
+								}
+
+							</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-content header-sticker sticker">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2 header-content-left">
+                        <div class="header-logo">
+                            <?php echo $this->getChildHtml("logo_theme"); ?>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 header-content-center">
+                        <div class="header-menu">
+                            <?php echo $this->getChildHtml("navigation.sections"); ?>
+                        </div>
+                        <div class="header-top-right">
+                            <div class="header-search">
+                                <div class="search-switcher">
+                                    <div class="dropdown-toggle">
+                                        <div class="icon-search"><i class="icon icon-magnifier"></i></div>
+                                    </div>
+                                    <div class="dropdown-switcher">
+                                        <?php echo $this->getChildHtml("top.search"); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php echo $this->getChildHtml("minicart"); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<?php endif; ?>
+	
+	<?php if($header_type == 2 ): ?>
+    <div class="header-content header-sticker sticker">
+        <div class="header-content-type">
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-2 header-content-left">
+					<div class="header-logo">
+						 <?php echo $this->getChildHtml("logo_theme"); ?>
+					</div>
+				</div>
+				<div class="col-sm-12 header-content-center">
+					<div class="header-menu">
+						<div class="container">
+							<div class="header-menu-content">
+								 <?php echo $this->getChildHtml("navigation.sections"); ?>
+							</div>
+						</div>
+					</div>
+					<div class="header-right">
+						<div class="header-content-right">
+							<div class="header-content-bottom">
+                                <div class="header-setting header-setting-link">
+                                    <div class="setting-switcher">
+                                        <div class="dropdown-toggle">
+                                            <div class="icon-setting"><i class="icon icon-user"></i></div>
+                                        </div>
+                                        <div class="dropdown-switcher">
+                                            <?php echo $this->getChildHtml("header.links"); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-search">
+                                    <div class="search-switcher">
+                                        <div class="dropdown-toggle">
+                                            <div class="icon-search"><i class="icon icon-magnifier"></i></div>
+                                        </div>
+                                        <div class="dropdown-switcher">
+                                            <?php echo $this->getChildHtml("top.search"); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-top-right">
+								<?php echo $this->getChildHtml("minicart"); ?>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+	</div>
+	<?php endif; ?>
+
+    <?php if($header_type == 3): ?>
+        <div class="panel wrapper">
+            <div class="panel header header-top">
+                <?php echo $this->getChildHtml("skip_to_content"); ?>
+                <div class="row">
+                    <div class="header-top-left col-sm-12">
+                        <div class="header-logo">
+                            <?php echo $this->getChildHtml("logo_theme"); ?>
+                        </div>
+                    </div>
+                    <div class="header-menu siderbar-menu">
+                        <?php echo $this->getChildHtml("navigation.sections"); ?>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="header-search">
+                            <div class="search-switcher">
+                                <div class="dropdown-toggle">
+                                    <div class="icon-search"><i class="icon icon-magnifier"></i></div>
+                                </div>
+                                <div class="dropdown-switcher">
+                                    <?php echo $this->getChildHtml("top.search"); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container">
+                <div class="header-content-bg">
+                    <div class="row">
+                        <div class="col-sm-2 col-md-2 col-lg-2 header-content-left" id="btn-baropen">
+                            <span class="icon-barmenu"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-sm-12 header-right">
+                            <div class="title">
+                                <a href="#">
+                                    <span>free shipping on order</span>
+                                    <span class="color">from $200</span>
+                                </a>
+                            </div>
+                        </div>
+                        <?php echo $this->getChildHtml("minicart"); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-over-lay"></div>
+        <div class="siderbarmenu siderbar-menu">
+            <div class="siderbarmenu-content">
+                <div class="header-menu">
+                    <?php echo $this->getChildHtml("accordion.menu"); ?>
+                    <?php // echo $this->getChildHtml("navigation.sections"); ?>
+                    <div id="links-header">
+                        <?php
+                        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                        $customerSession = $objectManager->get('Magento\Framework\App\Http\Context');
+                        $isLoggedIn = $customerSession->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH); ?>
+                        <?php if($isLoggedIn){ ?>
+                            <div class="actions dropdown options links-header-options">
+                                <div class="action toggle links-header-trigger" id="links-header-trigger">
+                                    <strong class="" data-bind="scope: 'customer'">
+                                        <span data-bind="text: customer().fullname ? $t('Welcome,%1').replace('%1', customer().firstname) : ''"></span>
+                                    </strong>
+                                    <script type="text/x-magento-init">
+										{
+											"*": {
+												"Magento_Ui/js/core/app": {
+													"components": {
+														"customer": {
+															"component": "Magento_Customer/js/view/customer"
+														}
+													}
+												}
+											}
+										}
+										</script>
+                                </div>
+                                <div class="links-header-dropdown" data-mage-init='{"dropdownDialog":{
+														"appendTo":".links-header-options",
+														"triggerTarget":"#links-header-trigger",
+														"closeOnMouseLeave": false,
+														"triggerClass":"active",
+														"parentClass":"active",
+														"buttons":null}}'>
+                                    <?php echo $this->getChildHtml("header.links"); ?>
+                                </div>
+                            </div>
+                        <?php } else { ?>
+                            <div class="account-list header links">
+                                <a class="login-link" href="<?php echo $this->getUrl('customer/account/login') ?>"><span class="icon icon-user"></span><?php echo __('Login') ?></a>
+                                <a class="register-link" href="<?php echo $this->getUrl('customer/account/create') ?>"><span class="icon icon-key"></span><?php echo __('Register') ?></a>
+                            </div>
+                        <?php } ?>
+                    </div>
+                    <div class="wishlist-header link wishlist" data-bind="scope: 'wishlist'">
+                        <span data-bind="scope: 'wishlist'" class="link wishlist">
+                        <a href="<?php echo $this->getUrl('wishlist') ?>">
+                            <span class="icon icon-heart"></span><?php echo __('Wishlist') ?>
+                            <!-- ko if: wishlist().counter --><span data-bind="text: wishlist().counter" class="counter qty"></span><!-- /ko -->
+                        </a>
+                    </div>
+                    <script type="text/x-magento-init">
+                        {
+                            "*": {
+                                "Magento_Ui/js/core/app": {
+                                    "components": {
+                                        "wishlist": {
+                                            "component": "Magento_Wishlist/js/view/wishlist"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    </script>
+                </div>
+                <div class="currency-language">
+                    <?php echo $this->getChildHtml("store_language"); ?>
+                    <?php echo $this->getChildHtml("currency"); ?>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
+	
+	<?php if($header_type == 4): ?>
+        <div class="header-content header-sticker sticker">
+            <div class="container-none">
+                <div class="header-content-type">
+                    <div class="row">
+                        <div class="col-sm-8 header-content-left">
+                            <div class="header-logo">
+                                <?php echo $this->getChildHtml("logo_theme"); ?>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 header-right">
+                            <div class="header-content-right">
+                                <div class="header-content-bottom">
+                                    <div class="header-search">
+                                        <div class="search-switcher">
+                                            <div class="dropdown-toggle">
+                                                <div class="icon-search"><i class="icon icon-magnifier"></i></div>
+                                            </div>
+                                            <div class="dropdown-switcher">
+                                                <?php echo $this->getChildHtml("top.search"); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-top-right">
+                                        <?php echo $this->getChildHtml("minicart"); ?>
+                                    </div>
+                                    <span id="btn-bar" class="icon-barmenu"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-over-lay"></div>
+        <div class="siderbarmenu siderbar-menu">
+            <div class="siderbarmenu-content">
+                <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                <div class="header-menu">
+                    <?php echo $this->getChildHtml("accordion.menu"); ?>
+                    <?php // echo $this->getChildHtml("navigation.sections"); ?>
+                    <div id="links-header">
+                        <?php
+                        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                        $customerSession = $objectManager->get('Magento\Framework\App\Http\Context');
+                        $isLoggedIn = $customerSession->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH); ?>
+                        <?php if($isLoggedIn){ ?>
+                            <div class="actions dropdown options links-header-options">
+                                <div class="action toggle links-header-trigger" id="links-header-trigger">
+                                    <strong class="" data-bind="scope: 'customer'">
+                                        <span data-bind="text: customer().fullname ? $t('Welcome,%1').replace('%1', customer().firstname) : ''"></span>
+                                    </strong>
+                                    <script type="text/x-magento-init">
+										{
+											"*": {
+												"Magento_Ui/js/core/app": {
+													"components": {
+														"customer": {
+															"component": "Magento_Customer/js/view/customer"
+														}
+													}
+												}
+											}
+										}
+										</script>
+                                </div>
+                                <div class="links-header-dropdown" data-mage-init='{"dropdownDialog":{
+														"appendTo":".links-header-options",
+														"triggerTarget":"#links-header-trigger",
+														"closeOnMouseLeave": false,
+														"triggerClass":"active",
+														"parentClass":"active",
+														"buttons":null}}'>
+                                    <?php echo $this->getChildHtml("header.links"); ?>
+                                </div>
+                            </div>
+                        <?php } else { ?>
+                            <div class="account-list header links">
+                                <a class="login-link" href="<?php echo $this->getUrl('customer/account/login') ?>"><span class="icon icon-user"></span><?php echo __('Login') ?></a>
+                                <a class="register-link" href="<?php echo $this->getUrl('customer/account/create') ?>"><span class="icon icon-key"></span><?php echo __('Register') ?></a>
+                            </div>
+                        <?php } ?>
+                    </div>
+                    <div class="wishlist-header link wishlist" data-bind="scope: 'wishlist'">
+                        <span data-bind="scope: 'wishlist'" class="link wishlist">
+                        <a href="<?php echo $this->getUrl('wishlist') ?>">
+                            <span class="icon icon-heart"></span><?php echo __('Wishlist') ?>
+                            <!-- ko if: wishlist().counter --><span data-bind="text: wishlist().counter" class="counter qty"></span><!-- /ko -->
+                        </a>
+                    </div>
+                    <script type="text/x-magento-init">
+                        {
+                            "*": {
+                                "Magento_Ui/js/core/app": {
+                                    "components": {
+                                        "wishlist": {
+                                            "component": "Magento_Wishlist/js/view/wishlist"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    </script>
+                </div>
+                <div class="currency-language">
+                    <?php echo $this->getChildHtml("store_language"); ?>
+                    <?php echo $this->getChildHtml("currency"); ?>
+                </div>
+            </div>
+        </div>
+
+	<?php endif; ?>
+	<?php if($header_type == 5): ?>
+        <div class="panel wrapper">
+            <div class="panel header header-top">
+                <?php echo $this->getChildHtml("skip_to_content"); ?>
+                <div class="row">
+                    <div class="header-top-left col-sm-3 col-lg-3 ">
+                        <?php echo $this->getChildHtml("store_language"); ?>
+                    </div>
+                    <div class="header-top-center col-sm-6 col-lg-6 col-xs-8">
+                        <a href="#"><span>free worldwide shipping on all order</span></a>
+                    </div>
+                    <div class="header-top-right col-sm-3 col-lg-3 col-xs-4">
+                        <div class="block-social">
+                            <ul>
+                                <li><a href="#"><i class="icon icon-social-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon icon-social-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon icon-social-pinterest"></i></a></li>
+                                <li><a href="#"><i class="icon icon-social-instagram"></i></a></li>
+                                <li><a href="#"><i class="icon icon-social-skype"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	 <div class="header-content header-sticker sticker">
+         <div class="header-content-container">
+			<div class="row">
+				<div class="col-sm-3 col-md-3 col-lg-3 header-content-left">
+					<div class="header-logo">
+						 <?php echo $this->getChildHtml("logo_theme"); ?>
+					</div>
+				</div>
+				<div class="col-sm-12 header-content-center">
+					<div class="header-menu">
+						<div class="container">
+							<div class="header-menu-content">
+								 <?php echo $this->getChildHtml("navigation.sections"); ?>
+							</div>
+						</div>
+					</div>
+					<div class="header-right">
+						<div class="header-content-right">
+							<div class="header-content-bottom">
+                                <div class="header-setting header-setting-link">
+                                    <div class="setting-switcher">
+                                        <div class="dropdown-toggle">
+                                            <div class="icon-setting"><i class="icon icon-user"></i></div>
+                                        </div>
+                                        <div class="dropdown-switcher">
+                                            <?php echo $this->getChildHtml("header.links"); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-search">
+                                    <div class="search-switcher">
+                                        <div class="dropdown-toggle">
+                                            <div class="icon-search"><i class="icon icon-magnifier"></i></div>
+                                        </div>
+                                        <div class="dropdown-switcher">
+                                            <?php echo $this->getChildHtml("top.search"); ?>
+                                        </div>
+                                    </div>
+                                </div>
+								 <div class="header-top-right">
+									<?php echo $this->getChildHtml("minicart"); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+     </div>
+	<?php endif; ?>
+	<?php if($header_type == 6): ?>
+        <div class="header-content header-sticker sticker">
+            <div class="container-none">
+                <div class="header-content-type">
+                    <div class="row">
+                        <div class="col-xs 4 col-sm-4 col-md-3 col-lg-3 header-content-left">
+                            <span id="btn-bar" class="icon-barmenu"><i class="icon icon-menu" aria-hidden="true"></i></span>
+                            <?php echo $this->getChildHtml("store_language"); ?>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6 header-center">
+                            <div class="header-logo">
+                                <?php echo $this->getChildHtml("logo_theme"); ?>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3 header-right">
+                            <div class="header-content-right">
+                                <div class="header-content-bottom">
+                                    <div class="header-search">
+                                        <div class="search-switcher">
+                                            <div class="dropdown-toggle">
+                                                <div class="icon-search"><i class="icon icon-magnifier"></i></div>
+                                            </div>
+                                            <div class="dropdown-switcher">
+                                                <?php echo $this->getChildHtml("top.search"); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-setting header-setting-link">
+                                        <div class="setting-switcher">
+                                            <div class="dropdown-toggle">
+                                                <div class="icon-setting"><i class="icon icon-user"></i></div>
+                                            </div>
+                                            <div class="dropdown-switcher">
+                                                <?php echo $this->getChildHtml("header.links"); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-top-right">
+                                        <?php echo $this->getChildHtml("minicart"); ?>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-over-lay"></div>
+        <div class="siderbarmenu siderbar-menu">
+            <div class="siderbarmenu-content">
+                <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                <div class="header-menu">
+                    <?php echo $this->getChildHtml("accordion.menu"); ?>
+                    <?php // echo $this->getChildHtml("navigation.sections"); ?>
+                    <div id="links-header">
+                        <?php
+                        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                        $customerSession = $objectManager->get('Magento\Framework\App\Http\Context');
+                        $isLoggedIn = $customerSession->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH); ?>
+                        <?php if($isLoggedIn){ ?>
+                            <div class="actions dropdown options links-header-options">
+                                <div class="action toggle links-header-trigger" id="links-header-trigger">
+                                    <strong class="" data-bind="scope: 'customer'">
+                                        <span data-bind="text: customer().fullname ? $t('Welcome,%1').replace('%1', customer().firstname) : ''"></span>
+                                    </strong>
+                                    <script type="text/x-magento-init">
+										{
+											"*": {
+												"Magento_Ui/js/core/app": {
+													"components": {
+														"customer": {
+															"component": "Magento_Customer/js/view/customer"
+														}
+													}
+												}
+											}
+										}
+										</script>
+                                </div>
+                                <div class="links-header-dropdown" data-mage-init='{"dropdownDialog":{
+														"appendTo":".links-header-options",
+														"triggerTarget":"#links-header-trigger",
+														"closeOnMouseLeave": false,
+														"triggerClass":"active",
+														"parentClass":"active",
+														"buttons":null}}'>
+                                    <?php echo $this->getChildHtml("header.links"); ?>
+                                </div>
+                            </div>
+                        <?php } else { ?>
+                            <div class="account-list header links">
+                                <a class="login-link" href="<?php echo $this->getUrl('customer/account/login') ?>"><span class="icon icon-user"></span><?php echo __('Login') ?></a>
+                                <a class="register-link" href="<?php echo $this->getUrl('customer/account/create') ?>"><span class="icon icon-key"></span><?php echo __('Register') ?></a>
+                            </div>
+                        <?php } ?>
+                    </div>
+                    <div class="wishlist-header link wishlist" data-bind="scope: 'wishlist'">
+                        <span data-bind="scope: 'wishlist'" class="link wishlist">
+                        <a href="<?php echo $this->getUrl('wishlist') ?>">
+                            <span class="icon icon-heart"></span><?php echo __('Wishlist') ?>
+                            <!-- ko if: wishlist().counter --><span data-bind="text: wishlist().counter" class="counter qty"></span><!-- /ko -->
+                        </a>
+                    </div>
+                    <script type="text/x-magento-init">
+                        {
+                            "*": {
+                                "Magento_Ui/js/core/app": {
+                                    "components": {
+                                        "wishlist": {
+                                            "component": "Magento_Wishlist/js/view/wishlist"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    </script>
+                </div>
+                <div class="currency-language">
+                    <?php echo $this->getChildHtml("store_language"); ?>
+                    <?php echo $this->getChildHtml("currency"); ?>
+                </div>
+            </div>
+        </div>
+	<?php endif; ?>
+	<?php if($header_type == 7): ?>
+	<div class="panel wrapper">
+        <div class="panel header header-top">
+            <?php echo $this->getChildHtml("skip_to_content"); ?>
+			<div class="row">
+				<div class="header-top-left col-sm-12">
+					<div class="header-custom-block">
+                        <a href="#"><span>Free shipping on order from $200</span></a>
+					</div>
+				</div>
+				<div class="header-top-right">
+                    <div class="header-setting header-setting-link">
+                        <div class="setting-switcher">
+                            <div class="dropdown-toggle">
+                                <div class="icon-setting"><i class="icon icon-user"></i></div>
+                            </div>
+                            <div class="dropdown-switcher">
+                                <?php echo $this->getChildHtml("header.links"); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php echo $this->getChildHtml("minicart"); ?>
+				</div>
+            </div>
+        </div>
+    </div>
+	<div class="header-content">
+		<div class="container">
+			<div class="header-content-bg">
+				<div class="row">
+					<div class="col-sm-2 col-md-2 col-lg-2 header-content-left">
+						<div class="header-logo">
+							 <?php echo $this->getChildHtml("logo_theme"); ?>
+						</div>
+					</div>
+					<div class="col-sm-12 header-right">
+						<div class="header-content-right">
+							<div class="header-content-bottom">
+								<div class="header-menu siderbar-menu">
+									 <?php echo $this->getChildHtml("navigation.sections"); ?>
+								</div>
+								 <div class="header-top-right">
+									<div class="header-search">
+										<div class="search-switcher">
+											<div class="dropdown-toggle">
+												<div class="icon-search"><i class="icon-magnifier icon"></i></div>
+											</div>
+											<div class="dropdown-switcher">
+												<?php echo $this->getChildHtml("top.search"); ?>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="currency-language">
+                        <?php echo $this->getChildHtml("store_language"); ?>
+                        <?php echo $this->getChildHtml("currency"); ?>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<?php endif; ?>
+	<?php if($header_type == 8): ?>
+	<div class="panel wrapper">
+        <div class="header header-top">
+            <?php echo $this->getChildHtml("skip_to_content"); ?>
+            <div class="row">
+                <div class="header-top-text col-sm-4">
+                    <a href="#"><span>Free shipping on order from $200</span></a>
+                </div>
+                <div class="header-top-text col-sm-4">
+                    <a href="#"><span>Up to 29 days return</span></a>
+                </div>
+                <div class="header-top-text col-sm-4">
+                    <a href="#"><span>24/7 premium support</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="header-content header-sticker sticker">
+		<div class="header-content-type">
+			<div class="header-content-left">
+                <?php echo $this->getChildHtml("store_language"); ?>
+                <?php echo $this->getChildHtml("currency"); ?>
+			</div>
+			<div class="header-logo">
+				 <?php echo $this->getChildHtml("logo_theme"); ?>
+			</div>
+			<div class="header-right">
+				<div class="header-content-right">
+					<div class="header-content-bottom">
+                        <div class="header-setting header-setting-link">
+                            <div class="setting-switcher">
+                                <div class="dropdown-toggle">
+                                    <div class="icon-setting"><i class="icon icon-user"></i></div>
+                                </div>
+                                <div class="dropdown-switcher">
+                                    <?php echo $this->getChildHtml("header.links"); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-search">
+                            <div class="search-switcher">
+                                <div class="dropdown-toggle">
+                                    <div class="icon-search"><i class="icon icon-magnifier"></i></div>
+                                </div>
+                                <div class="dropdown-switcher">
+                                    <?php echo $this->getChildHtml("top.search"); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-top-right">
+                            <?php echo $this->getChildHtml("minicart"); ?>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="header-wrapper">
+				<div class="header-top-menu">
+					<div class="container">
+                        <div class="header-menu">
+					        <?php echo $this->getChildHtml("navigation.sections"); ?>
+                        </div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	<?php endif; ?>
+</header>

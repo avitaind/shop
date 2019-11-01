@@ -1,0 +1,234 @@
+& when (@media-common = true) {
+	.vigoproduct .title-page {
+		margin-bottom: 30px;
+	}
+	.vigoproduct{
+		.product-item-info:hover .actions-secondary {
+			opacity: 1;
+			transition: all .3s ease 0s;
+			-webkit-transition: all .3s ease 0s;
+			-moz-transition: all .3s ease 0s;
+			-ms-transition: all .3s ease 0s;
+			-o-transition: all .3s ease 0s;
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			-o-transform: translateX(-50%);
+			visibility: visible;
+			bottom:30px;
+		}
+		.actions-secondary {
+			visibility: hidden;
+			opacity: 0;
+			transition: all 1s ease 0s;
+			-webkit-transition: all 1s ease 0s;
+			-moz-transition: all 1s ease 0s;
+			-ms-transition: all 1s ease 0s;
+			-o-transition: all 1s ease 0s;
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			-o-transform: translateX(-50%);
+			z-index: 100;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			white-space: nowrap;
+		}
+	}
+	.group-product-tabs{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		.product-tab{
+			display: inline-block;
+			list-style: outside none none;
+			margin: 0;
+			cursor: pointer;
+			padding: 0 15px;
+			position: relative;
+			&::after {
+				background: #dddddd none repeat scroll 0 0;
+				content: "";
+				height: 15px;
+				left: -1px;
+				margin-top: -7px;
+				position: absolute;
+				top: 50%;
+				width: 1px;
+				display: none;
+			}
+			&:first-child::after {
+				display: none;
+			}
+			.title {
+				font-size: 18px;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0;
+			}
+			&.active, &:hover{
+				color : @theme-color;
+			}
+			
+		}
+		
+	}
+	
+	.content-products{
+		.product-type-group {
+			height: 0;
+			opacity: 0;
+			visibility: hidden;
+			display: block;
+			overflow: hidden;
+			&.active {
+				height: auto;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		.product-item-info:hover .actions-secondary{
+			margin-bottom: 0px;
+		}
+		.products-list{
+			.product-item-details .product-item-actions .actions-secondary
+			{
+				margin-left:0;
+				visibility: visible;
+				opacity: 1;
+				transform: translate(0px, 0px);
+				-webkit-transform: translate(0px, 0px);
+				-moz-transform: translate(0px, 0px);
+				-ms-transform: translate(0px, 0px);
+				-o-transform: translate(0px, 0px);
+			}
+			.product-item-actions .btn-quickview,
+			.product-item-actions .actions-secondary > .action,
+			.product-item-actions .products.grid .actions-secondary .action,
+			.product-item-actions .product-social-links .action.tocompare{
+				font-size: 15px;
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+				vertical-align: middle;
+				border-radius: 0;
+			}
+			.product-item-details .product-item-actions .tocart{
+				line-height: 1;
+			}
+		}
+	}
+	.sections .vicomage-megamenu li.level0 .submenu{
+		.product-type-group {
+			height: 0;
+			opacity: 0;
+			visibility: hidden;
+			display: block;
+			overflow: hidden;
+		}
+	}
+	.sections .vicomage-megamenu li.level0:hover .submenu{
+		.content-products{
+			.product-type-group.active {
+				height: auto;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	.vigoproduct-list {
+		text-align: left;
+		.title-page {
+			text-align: left;
+			margin: 10px 0;
+			.subtitle {
+				display: block;
+				font-size: 18px;
+				letter-spacing: 0;
+				line-height: 1;
+				text-transform: uppercase;
+				color:#fff;
+				&::before {
+					left: 0;
+					margin-left: 0;
+				}
+			}
+		}
+		.block-title-tabs {
+			display: none;
+		}
+		.products-list{
+			.products {
+				margin: 10px 0 40px;
+			}
+			.product-item {
+				padding: 10px 0;
+			}
+			.product-item-info {
+				border: 0 none;
+				margin-bottom: 0;
+				padding-bottom: 0;
+				.product-img-hover{
+					margin-bottom:0;
+				}
+			}
+			.product-item-details {
+				padding-left: 20px;
+				padding-top: 10px;
+				.product-item-name {
+					font-size: 14px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					a {
+						font-weight: 500;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+				}
+				.price {
+					font-size: 14px;
+				}
+				.product-item-inner {
+					padding-top: 5px;
+				}
+				.product-item-actions .tocart {
+					background: #ffffff none repeat scroll 0 0;
+					border: 1px solid #dddddd;
+					color: #333333;
+					font-size: 12px;
+					font-weight: 300;
+					height: 36px;
+					letter-spacing: 1px;
+					padding: 0 12px;
+					&:hover{
+						background:@theme-color;
+						border-color:@theme-color;
+						color:#fff;
+					}
+				}
+			}
+		} 
+	}
+	.vicommage-count-down{
+		.timer-box {
+			background: #f7f7f7 none repeat scroll 0 0;
+			display: inline-block;
+			height: 50px;
+			margin: 0 3px;
+			padding: 5px 0;
+			width: 50px;
+			span{
+				display:block;
+			}
+		}	
+	}
+	
+	
+}
+

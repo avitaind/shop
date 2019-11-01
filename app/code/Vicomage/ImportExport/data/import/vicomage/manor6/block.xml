@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <block>
+    <item>
+      <title><![CDATA[Block Featured Sidebar]]></title>
+      <identifier><![CDATA[block_featured_sidebar]]></identifier>
+      <content><![CDATA[<div class="banner-sidebar">
+<img class="img-responsive"  src="{{media url="wysiwyg/vicomage/static/banner-sidebar.jpg"}}" alt="" />
+</div>
+<div class="section-featured-sidebar section-product-sidebar">
+{{widget type="Vicomage\Multiwidget\Block\Widget" title="Featured Items" identifier="featured-items" status="1" widget_product_type="category" category_ids="4" conditions_encoded="a:1:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]]" product_category_collection="random" category_template="widget/category/default-list.phtml" limit="8" slide="1" vertical="false" infinite="false" autoplay="false" arrows="true" dots="false" speed="300" autoplayspeed="3000" rows="4" width-image="270" height-image="320" padding="15" mobile="1" portrait="1" landscape="1" tablet="1" notebook="1" desktop="1" visible="1"}}
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Custom Block Tab]]></title>
+      <identifier><![CDATA[custom_block_tab]]></identifier>
+      <content><![CDATA[<table class="table table-sizing-guide">
+    <thead>
+        <tr>
+            <th colspan="6"><b>Clothing - Single Size Conversion (Continued)</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>UK</td>
+            <td>18</td>
+            <td>20</td>
+            <td>22</td>
+            <td>24</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>European</td>
+            <td>46</td>
+            <td>48</td>
+            <td>50</td>
+            <td>52</td>
+            <td>54</td>
+        </tr>
+        <tr>
+            <td>US</td>
+            <td>14</td>
+            <td>16</td>
+            <td>18</td>
+            <td>20</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>8</td>
+            <td>10</td>
+            <td>12</td>
+            <td>14</td>
+            <td>16</td>
+        </tr>
+    </tbody>
+</table>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Bottom]]></title>
+      <identifier><![CDATA[block_footer_bottom_home1]]></identifier>
+      <content><![CDATA[    <div class="social-list">
+        <ul class="list-inline">
+            <li><a href="#" class="social-link"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-linkedin"><span class="hidden">linkedin</span></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-rss"><span class="hidden">rss</span></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-dribbble"><span class="hidden">dribbble</span></i></a></li>
+        </ul>
+    </div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Home6 Slide]]></title>
+      <identifier><![CDATA[block_home6_slide]]></identifier>
+      <content><![CDATA[{{widget type="Vicomage\Slider\Block\Widget\Slider" setIdentity="home6-slide"}}]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Top Type 4( manor6)]]></title>
+      <identifier><![CDATA[block_footer_top_type4]]></identifier>
+      <content><![CDATA[<div class="footer-newletter-content ">
+	<div class="block-newsletter">
+		<h3 class="block-title">Signup and get <span>29%</span> discount on next order</h3>
+		{{block class="Magento\Newsletter\Block\Subscribe" name="footer.newsletter" template="subscribe_footer.phtml"}}
+	</div>		
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Block Footer Middle Type 4 (manor6)]]></title>
+      <identifier><![CDATA[block_footer_middle_type4]]></identifier>
+      <content><![CDATA[<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 col-mobile-12">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+            <div class="collapsible mobile-collapsible">
+                <h3 class="heading"><span class="block-title"> Keep in touch </span></h3>
+                <p class="address">221b Nothingham Forest - London - UK</p>
+                <br />
+                <p class="tel">0123 456 789 - 0123 987 654</p>
+                <br /> Redikiel@gmail.com</div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+                <div class="collapsible mobile-collapsible">
+                    <h3 class="heading"><span class="block-title">shopping</span></h3>
+                    <span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+                    <div class="block-content block-content-statick toggle-content">
+                        <ul class="bullet">
+                            <li><a href="#">Your Cart</a></li>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Addresses</a></li>
+                            <li><a href="#">Wishlist Items</a></li>
+                            <li><a href="#">Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-mobile-12">
+                <div class="collapsible mobile-collapsible">
+                    <h3 class="heading"><span class="block-title">extras</span></h3>
+                    <span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+                    <div class="block-content block-content-statick toggle-content">
+                        <ul class="bullet">
+                            <li><a href="#">Evouchers</a></li>
+                            <li><a href="#">Gift card</a></li>
+                            <li><a href="#">Gift experiance</a></li>
+                            <li><a href="#">Weddding gift list</a></li>
+                            <li><a href="#">Next credit card account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-mobile-12">
+        <div class="collapsible mobile-collapsible">
+                    <h3 class="heading"><span class="block-title"> Instagram </span></h3>
+                    <div class="instagram-list">
+                        <div class="instagram-inner"><a href="#"><img class="img-responsive" src="{{media url="wysiwyg/vicomage/static/home6/home6-insta-img1.jpg"}}" alt="" /></a></div>
+                        <div class="instagram-inner"><a href="#"><img class="img-responsive" src="{{media url="wysiwyg/vicomage/static/home6/home6-insta-img2.jpg"}}" alt="" /></a></div>
+                        <div class="instagram-inner"><a href="#"><img class="img-responsive" src="{{media url="wysiwyg/vicomage/static/home6/home6-insta-img3.jpg"}}" alt="" /></a></div>
+                        <div class="instagram-inner"><a href="#"><img class="img-responsive" src="{{media url="wysiwyg/vicomage/static/home6/home6-insta-img4.jpg"}}" alt="" /></a></div>
+                        <div class="instagram-inner"><a href="#"><img class="img-responsive" src="{{media url="wysiwyg/vicomage/static/home6/home6-insta-img5.jpg"}}" alt="" /></a></div>
+                        <div class="instagram-inner"><a href="#"><img class="img-responsive" src="{{media url="wysiwyg/vicomage/static/home6/home6-insta-img6.jpg"}}" alt="" /></a></div>
+                    </div>
+                </div>
+    </div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+    <item>
+      <title><![CDATA[Cms Static Content Home 6]]></title>
+      <identifier><![CDATA[cms-static-content-home6]]></identifier>
+      <content><![CDATA[<div class="section-bannertext">
+    <div class="container">
+                <div class="box-homehtml box-image col-sm-12 col-xs-12 col-lg-6 col-md-6 shopnow-left">
+                    <div class="banner-item effectbanner">
+                        <a class="image-wrap" href="#"><img  src="{{media url="wysiwyg/vicomage/static/home6/home6-bannertext-img.jpg"}}" alt="" /></a>
+                    </div>
+                </div>
+                 <div class="box-homehtml box-content col-sm-12 col-xs-12 col-lg-6 col-md-6 shopnow-left">
+                    <div class="block-html">
+                        <h4 class="title_block">Story about us</h4>
+                        <p class="block-htmldes">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum </p>
+                        <div class="signature"><img src="{{media url="wysiwyg/vicomage/static/home6/home6-bannertext-signature.jpg"}}" alt="" /></div>
+                    </div>
+                </div>
+    </div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </item>
+  </block>
+</root>

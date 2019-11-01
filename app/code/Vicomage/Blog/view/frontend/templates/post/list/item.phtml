@@ -1,0 +1,53 @@
+<?php
+/**
+ * Blog post list item template
+ *
+ * @var $block \Vicomage\Blog\Block\Post\AbstractPost
+ */
+?>
+<?php
+    $_post = $this->getPost();
+    $_postUrl = $_post->getPostUrl();
+    $_postName = $block->escapeHtml($_post->getTitle(), null, true);
+?>
+<li class="post-holder post-holder-<?php echo $_post->getId() ?>">
+
+    <div class="post-content">
+        <div class="post-description clearfix">
+            <div class="container">
+                <div class="row">
+                    <?php if ($featuredImage = $_post->getFeaturedImage()) { ?>
+                    <div class="post-image col-lg-5 col-sm-12">
+                        <a href="<?php echo $_postUrl ?>" title="<?php echo $_postName ?>">
+                            <img src="<?php echo $featuredImage ?>" alt="<?php echo $_postName ?>" />
+                        </a>
+                    </div>
+                    <?php } ?>
+                    <div class="post-item col-lg-7 col-sm-12">
+                        <div class="post-date">
+                            <span class="date-home-month"><?php echo $_post->getPublishDate('M') ?></span>
+                            <span class="date-home-day"><?php echo $_post->getPublishDate('j') ?></span>
+                            <span class="date-home-year"><?php echo $_post->getPublishDate('Y') ?></span>
+                        </div>
+
+                        <div class="post-title-holder clearfix">
+                            <h2 class="post-title">
+                                <a class="post-item-link"
+                                   href="<?php echo $_postUrl ?>">
+                                    <?php echo $_postName; ?>
+                                </a>
+                            </h2>
+                        </div>
+                        <a class="post-read-more" href="<?php echo $_postUrl ?>" title="<?php echo $_postName ?>"
+                           >
+                           <?php echo __('Read more') ?>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-footer">
+
+    </div>
+</li>
